@@ -11,26 +11,32 @@
         <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
     </head>
     <body>
+        <main>
         <h1>🏀 Mon compteur de score 🏀</h1>
         <section class="score-board">
+                <div>
+                    <h3>DOMICILE</h3>
+                    <p id="result-home" class="score">0</p>
+                    <button onclick="addOneHome()">+1</button>
+                    <button onclick="addTwoHome()">+2</button>
+                    <button onclick="addThreeHome()">+3</button>
+                </div>
             <div>
-            <h3>DOMICILE</h3>
-            <p id="result-home">0</p>
-            <button onclick="addOneHome()">+1</button>
-            <button onclick="addTwoHome()">+2</button>
-            <button onclick="addThreeHome()">+3</button>
-        </div>
-        <div>
-            <h3>EXTÉRIEUR</h3>
-            <p id="result-guest">0</p>
-            <button onclick="addOneGuest()">+1</button>
-            <button onclick="addTwoGuest()">+2</button>
-            <button onclick="addThreeGuest()">+3</button>
-        </div>
-        </section>
-        <section class="reset-section">
-            <button class="reset-btn" onclick="resetScore()">RESET</button>
-        </section>
+                <h3>EXTÉRIEUR</h3>
+                <p id="result-guest" class="score">0</p>
+                <button onclick="addOneGuest()">+1</button>
+                <button onclick="addTwoGuest()">+2</button>
+                <button onclick="addThreeGuest()">+3</button>
+            </div>
+            </section>
+            <p id="score-message"></p>
+            <section class="reset-section">
+                <button class="reset-btn" onclick="saveScore()">SAVE</button>
+                <button class="reset-btn" onclick="resetScore()">RESET</button>
+            </section>
+         </main>
+        <footer>
+        </footer>
         <script src="index.js"></script>
     </body>
 </html>
