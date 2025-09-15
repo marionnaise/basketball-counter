@@ -49,9 +49,9 @@ function resetScore(){
 
 function saveScore(){
     scoreMessage.textContent = "Le score est de " + countHome + " à " + countGuest
-    if (resultHome > resultGuest){
+    if (countHome > countGuest){
         winnerMessage.textContent = "Les joueurs du domicile gagnent !"
-    }else if (resultHome===resultGuest){
+    }else if (countHome===countGuest){
         winnerMessage.textContent = "C'est un match nul..."
     } else {
         winnerMessage.textContent = "Les joueurs extérieurs gagnent !"
