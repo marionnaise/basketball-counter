@@ -39,7 +39,7 @@ function saveScore(){
 }
 function resetScore(){
     countGuest = 0
-    countHome = 0
+    // countHome = 0
     resultGuest.textContent = countGuest
     resultHome.textContent = countHome
 }
