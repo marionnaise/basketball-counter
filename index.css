@@ -10,7 +10,7 @@ body{
     padding: 8%;
     text-align: center;
     font-family: 'Play', sans-serif;
-    /* background-image: url("./images/noisy.png"); */
+    background-image: url("./images/noisy.png");
 }
 .score-board{
     display: flex;
