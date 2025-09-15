@@ -7,11 +7,23 @@
 
 body{
     background-color: #0284C7;
-    padding: 8%;
+    
     text-align: center;
     font-family: 'Play', sans-serif;
     background-image: url("./images/noisy.png");
+
 }
+
+main{
+    padding: 5%;
+}
+
+p{
+    font-size: 2em;
+    color: #ff5700;
+    text-shadow: 1px white;
+}
+
 .score-board{
     display: flex;
     flex-direction: row;
@@ -21,32 +33,29 @@ body{
 .score-board div{
     padding: 70px;
 }
-p,button{
+.score,button,.reset-btn{
     font-family: 'Press Start 2P';
     background-image: url("./images/noisy.png");
-    font-size: 2em;
+    font-size: 1.5em;
 }
 
 h1{
     /* color: #075985; */
-    color: #ff5700
-;
+    color: #ff5700;
     text-transform: uppercase;
-    padding: 80px;
+    font-size: 2.5em;
 }
 
 h3{
     color: white;
-    font-size: 3em;
-}
-
-p, .reset-btn{
-    box-shadow: 3px 2px white;
-
-}
-
-p{
     font-size: 2em;
+}
+
+.score, .reset-btn{
+    box-shadow: 3px 2px white;
+}
+
+.score{
     background-color: #BAE6FD;
     color: #075985;
     padding: 50px;
@@ -57,14 +66,13 @@ button{
     border: 1px solid #BAE6FD ;
     background-color: #0284C7;
     color: #BAE6FD;
-    margin: 10px;
+    margin: 0 10px ;
     padding: 8px 8px;
 }
 
 button:hover{
     background-color: #BAE6FD;
     color: #0284C7;
-    cursor: pointer;
 }
 
 .reset-btn{
@@ -79,5 +87,14 @@ button:hover{
 .reset-section{
     display: flex;
     justify-content: center;
-    padding-top: 60px;
+    padding-top: 1%;
+}
+
+footer{
+    height: 200px;
+    background-image: url("./images/basket.jpg");
+    background-repeat: repeat;
+    background-position: bottom;
+    background-size: 200px;
+    border-bottom: 30px solid #ff5700;
 }
