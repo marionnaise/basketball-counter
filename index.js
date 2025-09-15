@@ -3,6 +3,7 @@ let resultGuest = document.getElementById("result-guest")
 let countHome = 0
 let countGuest = 0
 let scoreMessage = document.getElementById("score-message")
+let winnerMessage = document.getElementById("winner-message")
 
 function addOneHome(){
     countHome += 1
@@ -43,10 +44,16 @@ function resetScore(){
     resultGuest.textContent = countGuest
     resultHome.textContent = countHome
     scoreMessage.textContent = ""
+    winnerMessage.textContent = ""
 }
 
-
 function saveScore(){
-    if (resultHome > resultGuest)
     scoreMessage.textContent = "Le score est de " + countHome + " à " + countGuest
+    if (resultHome > resultGuest){
+        winnerMessage.textContent = "Les joueurs du domicile gagnent !"
+    }else if (resultHome===resultGuest){
+        winnerMessage.textContent = "C'est un match nul..."
+    } else {
+        winnerMessage.textContent = "Les joueurs extérieurs gagnent !"
+    }
 }
