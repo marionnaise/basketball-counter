@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My scoreboard counter</title>
+        <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <h1>🏀 My scoreboard counter 🏀</h1>
+        <section class="score-board">
+            <div>
+            <h3>HOME</h3>
+            <p id="result-home">0</p>
+            <button onclick="addOneHome()">+1</button>
+            <button onclick="addTwoHome()">+2</button>
+            <button onclick="addThreeHome()">+3</button>
+        </div>
+        <div>
+            <h3>GUEST</h3>
+            <p id="result-guest">0</p>
+            <button onclick="addOneGuest()">+1</button>
+            <button onclick="addTwoGuest()">+2</button>
+            <button onclick="addThreeGuest()">+3</button>
+        </div>
+        </section>
+        <section class="reset-section">
+            <button class="reset-btn" onclick="resetScore()">RESET</button>
+        </section>
+        <script src="index.js"></script>
+    </body>
+</html>

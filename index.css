@@ -1,0 +1,76 @@
+
+*{
+    /* border: 1px dotted red; */
+    margin: 0;
+    border-radius: 4px;
+}
+body{
+    background-color: #0284C7;
+    padding: 8%;
+    text-align: center;
+}
+.score-board{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+p,button{
+    font-family: 'Press Start 2P';
+}
+
+h1, h3{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;;
+}
+
+h1{
+    color: #BAE6FD;
+    text-transform: uppercase;
+    padding: 80px;
+}
+
+h3{
+    color: white;
+    font-size: 4em;
+}
+
+p, .reset-btn{
+    box-shadow: 3px 2px white;
+
+}
+
+p{
+    font-size: 2em;
+    background-color: #BAE6FD;
+    color: #075985;
+    padding: 50px;
+    margin: 30px;
+}
+
+button{
+    border: 1px solid #BAE6FD ;
+    background-color: #0284C7;
+    color: #BAE6FD;
+    margin: 10px;
+    padding: 8px 8px;
+}
+
+button:hover{
+    background-color: #BAE6FD;
+    color: #0284C7;
+}
+
+.reset-btn{
+    padding: 20px 70px;
+    background-color: #BAE6FD;
+    color: #0284C7;  
+}
+
+.reset-btn:hover{
+    opacity: 70%;
+}
+.reset-section{
+    display: flex;
+    justify-content: center;
+    padding-top: 60px;
+}
