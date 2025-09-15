@@ -47,5 +47,6 @@ function resetScore(){
 
 
 function saveScore(){
+    if (resultHome > resultGuest)
     scoreMessage.textContent = "Le score est de " + countHome + " à " + countGuest
 }
