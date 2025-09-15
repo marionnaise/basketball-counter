@@ -2,6 +2,7 @@ let resultHome = document.getElementById("result-home")
 let resultGuest = document.getElementById("result-guest")
 let countHome = 0
 let countGuest = 0
+let scoreMessage = document.getElementById("score-message")
 
 function addOneHome(){
     countHome += 1
@@ -33,9 +34,17 @@ function addThreeGuest(){
     resultGuest.textContent = countGuest
 }
 
+function saveScore(){
+
+}
 function resetScore(){
     countGuest = 0
     countHome = 0
     resultGuest.textContent = countGuest
     resultHome.textContent = countHome
+}
+
+
+function saveScore(){
+    scoreMessage.textContent = "Le score est de " + countHome + " à " + countGuest
 }
