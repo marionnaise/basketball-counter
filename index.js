@@ -57,3 +57,12 @@ function saveScore(){
         winnerMessage.textContent = "Les joueurs extérieurs gagnent !"
     }
 }
+
+function getWinner(){
+    if (countHome > countGuest){
+        return "Domicile"}
+    else if (countHome < countGuest){
+        return "Extérieur"
+    }
+    else { return "match nul"}
+}
